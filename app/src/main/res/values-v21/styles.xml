@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">#673AB7</item>
+        <item name="colorAccent">#FF4081</item>
+        <item name="colorPrimaryDark">#512DA8</item>
+        <item name="android:windowBackground">@color/window_background</item>
+        <!-- 设置波纹颜色 -->
+        <item name="android:colorControlHighlight">#FF4081</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>

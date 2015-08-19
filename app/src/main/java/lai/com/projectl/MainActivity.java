@@ -12,6 +12,7 @@ import android.support.v4.view.GravityCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
+import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
@@ -22,7 +23,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends ActionBarActivity {
 
     private DrawerLayout drawerLayout;
     private ViewPager mViewPager;
@@ -32,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         initView();
+        
     }
 
     private void initView() {
@@ -65,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void setupViewPager(ViewPager viewpager) {
         MyAdapter adapter = new MyAdapter(getSupportFragmentManager());
-        adapter.addFragment(new CheeseListFragment(), "category1");
+        adapter.addFragment(new MainItemFragment(), "category1");
         adapter.addFragment(new CheeseListFragment(), "category2");
         adapter.addFragment(new CheeseListFragment(), "category3");
         viewpager.setAdapter(adapter);
