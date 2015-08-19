@@ -69,4 +69,14 @@
         android:background="@drawable/btn_register_mine"
         android:gravity="center"
         android:textSize="15sp"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New CheckBox"
+        android:id="@+id/checkBox" />
 </LinearLayout>

@@ -6,9 +6,17 @@
     <Button
         android:id="@+id/btn_test_bowen"
         android:layout_width="match_parent"
-        android:layout_height="50dp" 
+        android:layout_height="50dp"
         android:text="MD主题的应用，按钮波纹效果"
         android:gravity="center"
         android:textSize="15sp"/>
 
+    <Button
+        android:id="@+id/btn_swipe_dismiss"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="50dp"
+        android:text="RecyclerViewSwipeDismiss"
+        android:gravity="center"
+        android:textSize="15sp"/>
 </LinearLayout>

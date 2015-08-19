@@ -10,18 +10,20 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.Toast;
 
+import lai.com.projectl.RecyclerViewSwipeDismiss.SwipeDismissRecyclerViewActivity;
+
 /**
  * Created by admin on 2015/8/19.
  */
 public class MainItemFragment extends Fragment{
 
     private View mMainView;
-    
+
     public static MainItemFragment getInstance() {
         MainItemFragment mainItemFragment = new MainItemFragment();
         return mainItemFragment;
     }
-    
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,8 +37,15 @@ public class MainItemFragment extends Fragment{
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getActivity(),"测试按钮波纹效果",Toast.LENGTH_SHORT).show();
                 Intent it = new Intent(getActivity(),MaterialDesignThemeActivity.class);
+                getActivity().startActivity(it);
+            }
+        });
+        Button btn_swipe_dismiss = (Button) mMainView.findViewById(R.id.btn_swipe_dismiss);
+        btn_swipe_dismiss.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent it = new Intent(getActivity(),SwipeDismissRecyclerViewActivity.class);
                 getActivity().startActivity(it);
             }
         });
