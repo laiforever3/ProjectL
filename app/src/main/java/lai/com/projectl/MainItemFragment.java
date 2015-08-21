@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.Toast;
 
+import lai.com.projectl.PagerSlidingTabStrip.sample.*;
 import lai.com.projectl.RecyclerViewSwipeDismiss.SwipeDismissRecyclerViewActivity;
 
 /**
@@ -46,6 +47,14 @@ public class MainItemFragment extends Fragment{
             @Override
             public void onClick(View v) {
                 Intent it = new Intent(getActivity(),SwipeDismissRecyclerViewActivity.class);
+                getActivity().startActivity(it);
+            }
+        });
+        Button btn_PagerSlidingStrip = (Button) mMainView.findViewById(R.id.btn_PagerSlidingStrip);
+        btn_PagerSlidingStrip.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent it = new Intent(getActivity(), lai.com.projectl.PagerSlidingTabStrip.sample.MainActivity.class);
                 getActivity().startActivity(it);
             }
         });

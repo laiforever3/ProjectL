@@ -19,6 +19,7 @@
         <activity android:name=".CheeseDetailActivity"></activity>
         <activity android:name=".MaterialDesignThemeActivity"></activity>
         <activity android:name=".RecyclerViewSwipeDismiss.SwipeDismissRecyclerViewActivity"></activity>
+        <activity android:name=".PagerSlidingTabStrip.sample.MainActivity"></activity>
     </application>
 
 </manifest>

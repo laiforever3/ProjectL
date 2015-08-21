@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/app/src/main/java/lai/com/projectl/PagerSlidingTabStrip/library/PagerSlidingTabStrip.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/lai/com/projectl/PagerSlidingTabStrip/sample/MainActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/lai/com/projectl/PagerSlidingTabStrip/sample/QuickContactFragment.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/lai/com/projectl/PagerSlidingTabStrip/sample/SuperAwesomeCardFragment.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/actionbar_bottom.9.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/ic_action_user.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/ic_launcher_actionbar.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/background_tab.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main_pager_slidingtab_strip.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/menu/main_pager_sliding_tab_strip.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/values/attrs.xml" charset="GBK" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

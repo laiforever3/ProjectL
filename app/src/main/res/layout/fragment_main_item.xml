@@ -7,6 +7,7 @@
         android:id="@+id/btn_test_bowen"
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:background="@null"
         android:text="MD主题的应用，按钮波纹效果"
         android:gravity="center"
         android:textSize="15sp"/>
@@ -16,7 +17,17 @@
         android:layout_width="match_parent"
         android:layout_marginTop="10dp"
         android:layout_height="50dp"
+        android:background="@null"
         android:text="RecyclerViewSwipeDismiss"
+        android:gravity="center"
+        android:textSize="15sp"/>
+    <Button
+        android:id="@+id/btn_PagerSlidingStrip"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="50dp"
+        android:background="@null"
+        android:text="PagerSlidingStrip"
         android:gravity="center"
         android:textSize="15sp"/>
 </LinearLayout>
