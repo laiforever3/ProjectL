@@ -80,10 +80,18 @@ public class MainItemFragment extends Fragment {
         });
 
         Button btn_CustomProgressBar = (Button) mMainView.findViewById(R.id.btn_CustomProgressBar);
-        btn_CustomImageView.setOnClickListener(new View.OnClickListener() {
+        btn_CustomProgressBar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent it = new Intent(getActivity(), CustomProgressBarTestActivity.class);
+                getActivity().startActivity(it);
+            }
+        });
+        Button btn_GoogleCustomView = (Button) mMainView.findViewById(R.id.btn_GoogleCustomView);
+        btn_GoogleCustomView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent it = new Intent(getActivity(), MainActivity.class);
                 getActivity().startActivity(it);
             }
         });

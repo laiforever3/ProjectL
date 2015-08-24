@@ -57,4 +57,14 @@
         android:text="CustomProgressBar"
         android:gravity="center"
         android:textSize="15sp"/>
+
+    <Button
+        android:id="@+id/btn_GoogleCustomView"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="50dp"
+        android:background="@null"
+        android:text="GoogleCustomView"
+        android:gravity="center"
+        android:textSize="15sp"/>
 </LinearLayout>
