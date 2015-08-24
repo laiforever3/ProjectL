@@ -14,5 +14,27 @@
         <attr name="pstsShouldExpand" format="boolean" />
         <attr name="pstsTextAllCaps" format="boolean" />
     </declare-styleable>
+    <declare-styleable name="CustomTitleView">
+        <attr name="titleText" format="string" />
+        <attr name="titleColor" format="color" />
+        <attr name="titleSize" format="dimension" />
+    </declare-styleable>
 
+    <declare-styleable name="CustomImageView">
+        <attr name="imageTitleText" format="string" />
+        <attr name="imageTitleColor" format="color" />
+        <attr name="imageTitleSize" format="dimension" />
+        <attr name="image" format="reference" />
+        <attr name="imageScaleType">
+            <enum name="fillXY" value="0" />
+            <enum name="center" value="1" />
+        </attr>
+    </declare-styleable>
+    
+    <declare-styleable name="CustomProgressBar">
+        <attr name="firstColor" format="color" />
+        <attr name="secondColor" format="color" />
+        <attr name="circleWidth" format="dimension" />
+        <attr name="speed" format="integer" />
+    </declare-styleable>
 </resources>

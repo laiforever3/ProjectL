@@ -20,6 +20,9 @@
         <activity android:name=".MaterialDesignThemeActivity"></activity>
         <activity android:name=".RecyclerViewSwipeDismiss.SwipeDismissRecyclerViewActivity"></activity>
         <activity android:name=".PagerSlidingTabStrip.sample.MainActivity"></activity>
+        <activity android:name=".CustomView.CustomTitleViewTestActivity"></activity>
+        <activity android:name=".CustomView.CustomImageViewTestActivity"></activity>
+        <activity android:name=".CustomView.CustomProgressBarTestActivity"></activity>
     </application>
 
 </manifest>

@@ -10,13 +10,17 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.Toast;
 
+import lai.com.projectl.CustomView.CustomImageViewTestActivity;
+import lai.com.projectl.CustomView.CustomProgressBarTestActivity;
+import lai.com.projectl.CustomView.CustomTitleView;
+import lai.com.projectl.CustomView.CustomTitleViewTestActivity;
 import lai.com.projectl.PagerSlidingTabStrip.sample.*;
 import lai.com.projectl.RecyclerViewSwipeDismiss.SwipeDismissRecyclerViewActivity;
 
 /**
  * Created by admin on 2015/8/19.
  */
-public class MainItemFragment extends Fragment{
+public class MainItemFragment extends Fragment {
 
     private View mMainView;
 
@@ -38,7 +42,7 @@ public class MainItemFragment extends Fragment{
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent it = new Intent(getActivity(),MaterialDesignThemeActivity.class);
+                Intent it = new Intent(getActivity(), MaterialDesignThemeActivity.class);
                 getActivity().startActivity(it);
             }
         });
@@ -46,7 +50,7 @@ public class MainItemFragment extends Fragment{
         btn_swipe_dismiss.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent it = new Intent(getActivity(),SwipeDismissRecyclerViewActivity.class);
+                Intent it = new Intent(getActivity(), SwipeDismissRecyclerViewActivity.class);
                 getActivity().startActivity(it);
             }
         });
@@ -55,6 +59,31 @@ public class MainItemFragment extends Fragment{
             @Override
             public void onClick(View v) {
                 Intent it = new Intent(getActivity(), lai.com.projectl.PagerSlidingTabStrip.sample.MainActivity.class);
+                getActivity().startActivity(it);
+            }
+        });
+        Button btn_CustomTtileView = (Button) mMainView.findViewById(R.id.btn_CustomTtileView);
+        btn_CustomTtileView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent it = new Intent(getActivity(), CustomTitleViewTestActivity.class);
+                getActivity().startActivity(it);
+            }
+        });
+        Button btn_CustomImageView = (Button) mMainView.findViewById(R.id.btn_CustomImageView);
+        btn_CustomImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent it = new Intent(getActivity(), CustomImageViewTestActivity.class);
+                getActivity().startActivity(it);
+            }
+        });
+
+        Button btn_CustomProgressBar = (Button) mMainView.findViewById(R.id.btn_CustomProgressBar);
+        btn_CustomImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent it = new Intent(getActivity(), CustomProgressBarTestActivity.class);
                 getActivity().startActivity(it);
             }
         });
