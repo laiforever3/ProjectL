@@ -2,15 +2,32 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:cus="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <lai.com.projectl.CustomView.CustomProgressBar
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <lai.com.projectl.CustomView.library.CustomProgressBar
+        android:id="@+id/btn_CustomProgressBar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_marginTop="10dp"
         cus:firstColor="#2ef853"
         cus:secondColor="#ff4593"
         cus:circleWidth="5dp"
         cus:speed="20"
         />
+    <Button
+        android:id="@+id/btnStopProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="stopProgressBar"
+        android:textSize="15sp"
+        android:textColor="#100e0f"/>
+
+    <Button
+        android:id="@+id/btnStartProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="startProgressBar"
+        android:textSize="15sp"
+        android:textColor="#100e0f"/>
 </LinearLayout>

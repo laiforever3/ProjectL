@@ -23,6 +23,7 @@
         <activity android:name=".CustomView.CustomTitleViewTestActivity"></activity>
         <activity android:name=".CustomView.CustomImageViewTestActivity"></activity>
         <activity android:name=".CustomView.CustomProgressBarTestActivity"></activity>
+        <activity android:name=".CustomView.CanvasDrawTestActivity"></activity>
     </application>
 
 </manifest>

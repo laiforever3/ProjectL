@@ -1,4 +1,4 @@
-package lai.com.projectl.CustomView;
+package lai.com.projectl.CustomView.library;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -19,10 +19,10 @@ public class CustomTitleView extends View {
     private String mTitleText;
     private int mTitleSize = 30;
     private int mTitleColor= 0xFF666666;
-    
+
     private Paint mPaint;
     private Rect mBound;
-    
+
     public CustomTitleView(Context context) {
         this(context, null);
     }
@@ -39,7 +39,7 @@ public class CustomTitleView extends View {
         mTitleText = a.getString(R.styleable.CustomTitleView_titleText);
         mTitleColor = a.getColor(R.styleable.CustomTitleView_titleColor, mTitleColor);
         mTitleSize = a.getDimensionPixelSize(R.styleable.CustomTitleView_titleSize, mTitleSize);
-        
+
         a.recycle();
 
         mPaint = new Paint();
@@ -47,7 +47,7 @@ public class CustomTitleView extends View {
 
         mPaint.setTextSize(mTitleSize);
         mPaint.getTextBounds(mTitleText,0,mTitleText.length(),mBound);
-        
+
     }
 
     @Override
@@ -63,6 +63,6 @@ public class CustomTitleView extends View {
 
         mPaint.setColor(Color.BLUE);
         canvas.drawText(mTitleText,getWidth()/2-mBound.width()/2,getHeight()/2-mBound.height()/2,mPaint);
-        
+
     }
 }

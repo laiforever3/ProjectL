@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <lai.com.projectl.CustomView.CustomImageView
+    <lai.com.projectl.CustomView.library.CustomImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         custom:image="@drawable/avatar_one"

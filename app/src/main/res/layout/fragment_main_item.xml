@@ -67,4 +67,14 @@
         android:text="GoogleCustomView"
         android:gravity="center"
         android:textSize="15sp"/>
+
+    <Button
+        android:id="@+id/btn_CanvasDrawView"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="50dp"
+        android:background="@null"
+        android:text="CanvasDrawView"
+        android:gravity="center"
+        android:textSize="15sp"/>
 </LinearLayout>

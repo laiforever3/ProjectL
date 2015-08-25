@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <!--<lai.com.projectl.CustomView.CustomTitleView-->
+    <!--<lai.com.projectl.CustomView.library.CustomTitleView-->
         <!--android:id="@+id/customTitleView"-->
         <!--android:layout_width="300dp"-->
         <!--android:layout_height="200dp"-->
@@ -13,7 +13,7 @@
         <!--cst:titleSize="50sp"-->
         <!--cst:titleText="customTitleView" />-->
 
-    <lai.com.projectl.CustomView.CustomTitleViewTwo
+    <lai.com.projectl.CustomView.library.CustomTitleViewTwo
         android:id="@+id/customTitleViewTwo"
         android:layout_width="500dp"
         android:layout_height="200dp"

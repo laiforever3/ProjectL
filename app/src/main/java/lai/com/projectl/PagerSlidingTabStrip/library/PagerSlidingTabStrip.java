@@ -44,7 +44,7 @@ import java.util.Locale;
 import lai.com.projectl.R;
 
 /**
- * 源码地址： https://github.com/astuetz/PagerSlidingTabStrip
+ * 源 码地址： https://github.com/astuetz/PagerSlidingTabStrip
  */
 public class PagerSlidingTabStrip extends HorizontalScrollView {
 

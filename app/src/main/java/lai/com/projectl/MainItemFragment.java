@@ -8,13 +8,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.Toast;
 
+import lai.com.projectl.CustomView.CanvasDrawTestActivity;
 import lai.com.projectl.CustomView.CustomImageViewTestActivity;
 import lai.com.projectl.CustomView.CustomProgressBarTestActivity;
-import lai.com.projectl.CustomView.CustomTitleView;
 import lai.com.projectl.CustomView.CustomTitleViewTestActivity;
-import lai.com.projectl.PagerSlidingTabStrip.sample.*;
 import lai.com.projectl.RecyclerViewSwipeDismiss.SwipeDismissRecyclerViewActivity;
 
 /**
@@ -91,7 +89,15 @@ public class MainItemFragment extends Fragment {
         btn_GoogleCustomView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent it = new Intent(getActivity(), MainActivity.class);
+                Intent it = new Intent(getActivity(), lai.com.googledemo.customview.MainActivity.class);
+                getActivity().startActivity(it);
+            }
+        });
+        Button btn_CanvasDrawView = (Button) mMainView.findViewById(R.id.btn_CanvasDrawView);
+        btn_CanvasDrawView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent it = new Intent(getActivity(), CanvasDrawTestActivity.class);
                 getActivity().startActivity(it);
             }
         });

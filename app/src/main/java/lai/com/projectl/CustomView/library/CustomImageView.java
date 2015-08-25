@@ -1,4 +1,4 @@
-package lai.com.projectl.CustomView;
+package lai.com.projectl.CustomView.library;
 
 import android.content.Context;
 import android.content.res.TypedArray;

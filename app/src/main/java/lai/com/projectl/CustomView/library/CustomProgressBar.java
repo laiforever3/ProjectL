@@ -1,4 +1,4 @@
-package lai.com.projectl.CustomView;
+package lai.com.projectl.CustomView.library;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -6,7 +6,9 @@ import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.RectF;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.View;
+import android.widget.ProgressBar;
 
 import lai.com.projectl.R;
 
@@ -22,6 +24,7 @@ public class CustomProgressBar extends View {
     private int mProgress;
     private int mSpeed;
     private boolean isNext;
+    private boolean stopProgressBar;
 
     public CustomProgressBar(Context context) {
         this(context, null);
@@ -42,28 +45,8 @@ public class CustomProgressBar extends View {
 
         a.recycle();
         mPaint = new Paint();
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                mProgress++;
-                if (mProgress == 360) {
-                    mProgress = 0;
-                    if (!isNext) {
-                        isNext = true;
-                    } else {
-                        isNext = false;
-                    }
-                }
-                postInvalidate();
-                try {
-                    Thread.sleep(mSpeed);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
 
-            }
-        }).start();
-
+        runProgressBar();
     }
 
     @Override
@@ -91,5 +74,38 @@ public class CustomProgressBar extends View {
 
 
         super.onDraw(canvas);
+    }
+
+    public void setStopProgressBar(boolean stopProgressBar) {
+        this.stopProgressBar = stopProgressBar;
+        if (stopProgressBar == false) {
+            runProgressBar();
+        }
+    }
+
+    private void runProgressBar() {
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                while (!stopProgressBar) {
+                    Log.e("lai", "ProgressBar is running");
+                    mProgress++;
+                    if (mProgress == 360) {
+                        mProgress = 0;
+                        if (!isNext) {
+                            isNext = true;
+                        } else {
+                            isNext = false;
+                        }
+                    }
+                    postInvalidate();
+                    try {
+                        Thread.sleep(mSpeed);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+        }).start();
     }
 }
