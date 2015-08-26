@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:background="#FFDED7"
-        android:textColor="@color/text_z2"
+        android:textColor="@color/test"
         android:textSize="15sp" />
 
 </LinearLayout>
