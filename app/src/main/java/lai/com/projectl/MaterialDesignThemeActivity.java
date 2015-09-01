@@ -3,6 +3,8 @@ package lai.com.projectl;
 import android.app.Activity;
 import android.os.Bundle;
 
+import lai.com.projectl.base.BaseActivity;
+
 /**
  * 2、Material Design的Theme
     md的主题有：
@@ -18,7 +20,7 @@ import android.os.Bundle;
  * 
  * Created by admin on 2015/8/19.
  */
-public class MaterialDesignThemeActivity extends Activity{
+public class MaterialDesignThemeActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

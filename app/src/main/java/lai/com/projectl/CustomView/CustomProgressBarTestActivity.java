@@ -7,11 +7,12 @@ import android.widget.Button;
 
 import lai.com.projectl.CustomView.library.CustomProgressBar;
 import lai.com.projectl.R;
+import lai.com.projectl.base.BaseActivity;
 
 /**
  * Created by admin on 2015/8/24.
  */
-public class CustomProgressBarTestActivity extends Activity {
+public class CustomProgressBarTestActivity extends BaseActivity {
 
     private CustomProgressBar mCustomProgressBar;
     private Button mStopProgressBar;

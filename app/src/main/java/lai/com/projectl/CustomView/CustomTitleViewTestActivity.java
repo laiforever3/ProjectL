@@ -4,12 +4,13 @@ import android.app.Activity;
 import android.os.Bundle;
 
 import lai.com.projectl.R;
+import lai.com.projectl.base.BaseActivity;
 
 /**
  * Android 自定义View (一)  http://blog.csdn.net/lmj623565791/article/details/24252901 
  * Created by admin on 2015/8/24.
  */
-public class CustomTitleViewTestActivity extends Activity {
+public class CustomTitleViewTestActivity extends BaseActivity {
 
     
     

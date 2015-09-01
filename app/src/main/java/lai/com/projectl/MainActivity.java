@@ -22,8 +22,10 @@ import android.view.View;
 import java.util.ArrayList;
 import java.util.List;
 
+import lai.com.projectl.base.BaseActivity;
 
-public class MainActivity extends ActionBarActivity {
+
+public class MainActivity extends BaseActivity {
 
     private DrawerLayout drawerLayout;
     private ViewPager mViewPager;

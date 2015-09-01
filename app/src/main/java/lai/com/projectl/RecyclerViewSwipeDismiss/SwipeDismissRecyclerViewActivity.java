@@ -15,9 +15,10 @@ import java.util.LinkedList;
 import java.util.List;
 
 import lai.com.projectl.R;
+import lai.com.projectl.base.BaseActivity;
 
 
-public class SwipeDismissRecyclerViewActivity extends AppCompatActivity {
+public class SwipeDismissRecyclerViewActivity extends BaseActivity {
 
     private void showDialog(String msg){
         AlertDialog alert = new AlertDialog.Builder(SwipeDismissRecyclerViewActivity.this)

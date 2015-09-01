@@ -19,8 +19,9 @@ import android.widget.ImageView;
 import android.widget.ImageView.ScaleType;
 
 import lai.com.projectl.R;
+import lai.com.projectl.base.BaseActivity;
 
-public class MainActivity2 extends Activity implements OnClickListener {
+public class MainActivity2 extends BaseActivity implements OnClickListener {
 
 	private static final String TAG = "MainActivity";
 

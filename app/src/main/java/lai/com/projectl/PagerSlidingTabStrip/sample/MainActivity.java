@@ -37,8 +37,9 @@ import android.view.View;
 
 import lai.com.projectl.PagerSlidingTabStrip.library.PagerSlidingTabStrip;
 import lai.com.projectl.R;
+import lai.com.projectl.base.BaseActivity;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
 
 	private final Handler handler = new Handler();
 

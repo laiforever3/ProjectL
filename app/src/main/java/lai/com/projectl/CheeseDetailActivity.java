@@ -26,7 +26,9 @@ import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
 
-public class CheeseDetailActivity extends AppCompatActivity {
+import lai.com.projectl.base.BaseActivity;
+
+public class CheeseDetailActivity extends BaseActivity {
 
     public static final String EXTRA_NAME = "cheese_name";
 
