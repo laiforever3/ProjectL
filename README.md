@@ -2,16 +2,13 @@
 L的列子代码
 
 目录：
+
     googledemo.customview 谷歌的demo
     projectl 
       CustomView 自定义View
-      
         CustomTitleView 自定义标题的view
-        
         CustomImageView 自定义图片显示的view
-        
         CustomProgressBar 自定义圆形进度条的view（俩种颜色变化）
-        
         CustomDrawView 自定义View中的onDraw中的Canvas 的使用
       gif 
         MovieImageView 可以显示的gif的ImageView，采用android 的movie 来显示gif
