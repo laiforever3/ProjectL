@@ -4,7 +4,9 @@ L的列子代码
 目录：
 
     googledemo.customview 谷歌的demo
-    projectl 
+    projectl
+      AppForegroundStateManager
+        检测Android应用的启动与关闭
       CustomView 自定义View
         CustomTitleView 自定义标题的view
         CustomImageView 自定义图片显示的view
